@@ -1,4 +1,4 @@
-<div appStickyHeader [class]="'topsticky'">
+<div *ngIf="!isMobile" appStickyHeader [class]="'topsticky'">
 	<header id="navbar" class="d-none d-lg-block">
 		<div id="navUpdates">
 			<div class="container">
@@ -7,6 +7,20 @@
 						<a (click)="onLogoClick($event)">
 							<img src="assets/images/Logo.png" alt="Logo" />
 						</a>
+					</div>
+					<div class="middle-menu">
+						<div class="title">LOGO</div>
+						<div class="below-list">
+							<div class="flex-menus">
+								<div class="primary-menu">
+									<a>SHOP</a>
+									<a>SKILLS</a>
+									<a>STORIES</a>
+									<a>about</a>
+									<a>Contact US</a>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="flex-menus">
 						<div class="primary-menu">
@@ -24,7 +38,7 @@
 	</header>
 </div>
 
-<header id="navbar" class="d-lg-none">
+<header *ngIf="isMobile" id="navbar" class="d-lg-none">
 	<div class="menus">
 		<mat-sidenav-container class="nav-container">
 			<mat-sidenav-content class="mobile-header" appStickyHeader [class]="'topsticky'">
@@ -43,7 +57,7 @@
 			</mat-sidenav-content>
 			<mat-sidenav #sidenav mode="push" position="end">
 				<div class="logo-inside float-left">
-					<img src="/assets/images/red-sea-exports-logo.jpg" alt="Red sea Exports" />
+					<img src="assets/images/Logo.png" alt="Logo" />
 				</div>
 				<p><button mat-icon-button (click)="sidenav.close()"><mat-icon class="close-btn">close</mat-icon></button></p>
 				<div class="main-menus">

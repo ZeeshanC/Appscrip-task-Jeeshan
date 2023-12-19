@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './core/header/header.component';
+import { UtilService } from './services/util.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,9 +16,12 @@ import { HeaderComponent } from './core/header/header.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HeaderComponent
+    HeaderComponent,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    UtilService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

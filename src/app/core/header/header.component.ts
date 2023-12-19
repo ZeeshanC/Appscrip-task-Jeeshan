@@ -4,6 +4,7 @@ import { MatSidenav, MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { RouterModule } from '@angular/router';
+import { UtilService } from 'src/app/services/util.service';
 
 @Component({
   selector: 'app-header',
@@ -15,11 +16,14 @@ import { RouterModule } from '@angular/router';
 export class HeaderComponent {
 
   @ViewChild('sidenav', { static: true }) sidenav!: MatSidenav;
+  isMobile: boolean;
 
   constructor(
+    public util: UtilService
   ) { }
 
   ngOnInit() {
+    this.isMobile = this.util.isMobile();
   }
 
   /**logo click listner */

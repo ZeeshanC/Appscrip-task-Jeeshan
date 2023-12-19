@@ -1,0 +1,28 @@
+<div class="product-container">
+	<div class="header">
+		<div class="left">
+			<div class="noitems"></div>
+			<div class="filteroption"></div>
+		</div>
+		<div class="right">
+			<div class="recommended"></div>
+		</div>
+	</div>
+	<div class="product-list">
+		<div class="filter"></div>
+		<div *ngIf="products" class="products">
+			<div class="list" *ngFor="let product of products">
+				<div class="image">
+					<img [src]="product?.image" [alt]="product?.title">
+				</div>
+				<div class="title">{{product?.title}}</div>
+				<div class="below">
+					<span class="text">Sign in or Create an account to see pricing</span>
+					<span class="material-icons">
+						favorite_border
+						</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

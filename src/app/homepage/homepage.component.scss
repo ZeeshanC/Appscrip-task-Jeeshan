@@ -1,0 +1,32 @@
+.main-container {
+	margin-top: 150px;
+
+	.text-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+		gap: 16px;
+		color: #252020;
+		font-family: 'Simplon Norm', Arial, sans-serif;
+
+		.title {
+			font-size: 60px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+		}
+
+		.text {
+			text-align: center;
+			font-size: 22px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 40px;
+			max-width: 721px;
+		}
+	}
+}

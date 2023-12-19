@@ -1,0 +1,41 @@
+.product-container {
+	.product-list {
+		.filter {}
+
+		.products {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 16px;
+			padding: 100px 0px 96px 96px;
+			.list {
+				max-width: 300px;
+				.image {
+					img {
+						width: 300px;
+						height: 399px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.product-container {
+		.product-list {
+			.filter {}
+	
+			.products {
+				.list {
+					.image {
+						img {
+							width: 168px;
+							height: 224px;
+							background: lightgray 50% / cover no-repeat;
+						}
+					}
+				}
+			}
+		}
+	}
+}
