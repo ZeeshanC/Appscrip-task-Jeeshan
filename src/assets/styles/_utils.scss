@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  color: $gray-dark;
   // font-family: $font-family;
 }
 
@@ -37,12 +36,10 @@ body {
 }
 
 .h-separator {
-  border-top: 1px solid $gray-light-2;
   height: 1px;
   margin: 10px auto;
 }
 .v-separator {
-  border-left: 1px solid $gray-light;
   height: 100%;
   margin: auto 25px;
 }
@@ -52,37 +49,19 @@ body {
   font-weight: bold;
   font-size: 20px;
   line-height: 30px;
-  color: $gray-dark;
   text-align: center;
   margin-bottom: 20px;
 }
 
-@media only screen and (min-width: $breakpoint-desktop) {
-}
-
-@media only screen and (max-width: $breakpoint-mobile) {
+@media only screen and (max-width: 768px) {
   .padding-m-0 {
     padding: 0px;
   }
 }
 // Social icons
-.icon-fb::before {
-  color: $facebook;
-}
-.icon-facebook::before {
-  color: $facebook;
-}
-.icon-twitter::before {
-  color: $twitter;
-}
-.icon-google::before {
-  color: $gmail;
-}
-.icon-whatsapp::before {
-  color: $whatsapp;
-}
+
 .icon-linkedin::before {
-  color: $linkedin;
+  color: #0077B5;
 }
 .icon-thumbsup:before {
   color: #325090;

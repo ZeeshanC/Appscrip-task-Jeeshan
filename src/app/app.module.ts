@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './core/header/header.component';
 import { UtilService } from './services/util.service';
 import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './core/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     BrowserAnimationsModule,
     HeaderComponent,
-    HttpClientModule
+    HttpClientModule,
+    FooterComponent
   ],
   providers: [
     UtilService
